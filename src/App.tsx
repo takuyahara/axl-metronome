@@ -1,7 +1,7 @@
 import React, { Component, createRef, RefObject } from 'react';
 import _ from 'lodash';
 import style from './App.module.scss';
-import Tempo from './Tempo/Tempo';
+import TempoSelector from './Tempo/TempoSelector';
 
 interface IProps {
   // empty
@@ -12,7 +12,7 @@ interface IState {
 
 class App extends Component<IProps, IState> {
   // Initialize in init()
-  // empty
+  private isDescEnabled!: boolean;
 
   // Ref
   // empty
@@ -28,13 +28,7 @@ class App extends Component<IProps, IState> {
     // empty
 }
   private init(props: IProps): void {
-    // empty
-  }
-  public componentDidMount(): void {
-    const root = document.getElementById('root')!;
-    root.addEventListener('touchstart', e => {
-      e.preventDefault();
-    });
+    this.isDescEnabled = true;
   }
   public componentWillReceiveProps(newProps: IProps): void {
     if (_.isEqual(this.props, newProps)) {
@@ -46,14 +40,17 @@ class App extends Component<IProps, IState> {
   public render(): React.ReactNode {
     return (
       <div className={style.App}>
-        <Tempo 
-          role="from" 
-          tempo={80} 
-          range={{
-            from: 50,
-            to: 200,
+        <TempoSelector 
+          defaultTempo={{
+            from: 90,
+            to: 160,
           }} 
-          maxDelta={100} 
+          range={{
+            from: 60,
+            to: 780,
+          }} 
+          maxDelta={100}
+          isDescEnabled={this.isDescEnabled} 
         />
       </div>
     );
