@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.1.6",
+    "@bugsnag/js": "^5.2.0",
+    "@bugsnag/plugin-react": "^5.2.0",
     "@svgr/webpack": "2.4.1",
     "@types/jest": "23.3.13",
+    "@types/lodash": "^4.14.120",
     "@types/node": "10.12.21",
     "@types/react": "16.8.1",
     "@types/react-dom": "16.0.11",
@@ -21,6 +24,7 @@
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
+    "dotenv-webpack": "^1.7.0",
     "eslint": "5.6.0",
     "eslint-config-react-app": "^3.0.6",
     "eslint-loader": "2.1.1",
@@ -37,6 +41,7 @@
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "mini-css-extract-plugin": "0.4.3",
+    "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.1.0",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -54,14 +59,58 @@
     "typescript": "3.3.1",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
+    "webpack-bugsnag-plugins": "^1.3.0",
     "webpack-dev-server": "3.1.14",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
+  "watch": {
+    "tslint": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,tsx",
+      "quiet": false
+    },
+    "stylelint": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "scss",
+      "quiet": false
+    }
+  },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "yarn test-unwatch --watchAll",
+    "test-unwatch": "env-cmd .env jest --forceExit --detectOpenHandles",
+    "patch": "ls node_modules_patch/ | awk '{system(\"cp -rp node_modules_patch/\"$1\" node_modules\")}'",
+    "snyk": "snyk test",
+    "coverage": "rm -rf coverage && yarn test-unwatch --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "tslint": "tslint -p tsconfig.json",
+    "stylelint": "stylelint 'src/**/*.scss'",
+    "watch-tslint": "npm-watch tslint",
+    "watch-stylelint": "npm-watch stylelint",
+    "lint-staged": "lint-staged",
+    "pre-commit": "yarn lint-staged && yarn test-unwatch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn pre-commit"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -75,20 +124,24 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+      "!src/index.tsx",
+      "!**/*.d.ts"
     ],
     "resolver": "jest-pnp-resolver",
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+      "<rootDir>/__tests__/**/*.test.(j|t)s?(x)"
     ],
     "testEnvironment": "jsdom",
     "testURL": "http://localhost",
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.tsx?$": "ts-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
@@ -97,7 +150,9 @@
       "^.+\\.module\\.(css|sass|scss)$"
     ],
     "moduleNameMapper": {
+      "^Tempo/(.+)": "<rootDir>/src/Tempo/$1",
       "^react-native$": "react-native-web",
+      "^__tests__/(.+)": "<rootDir>/__tests__/$1",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
     },
     "moduleFileExtensions": [
@@ -117,5 +172,36 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-info": "^4.1.11",
+    "@storybook/addon-knobs": "^4.1.11",
+    "@storybook/addon-links": "^4.1.11",
+    "@storybook/addon-notes": "^4.1.11",
+    "@storybook/addon-options": "^4.1.11",
+    "@storybook/addons": "^4.1.11",
+    "@storybook/react": "^4.1.11",
+    "@types/enzyme": "^3.1.16",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/sinon": "^7.0.5",
+    "@types/storybook__addon-knobs": "^4.0.0",
+    "@types/storybook__addon-notes": "^4.0.1",
+    "@types/storybook__react": "^4.0.0",
+    "env-cmd": "^8.0.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "enzyme-to-json": "^3.3.5",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.3",
+    "npm-watch": "^0.6.0",
+    "qrcode": "^1.3.3",
+    "sinon": "^7.2.3",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0"
   }
 }
