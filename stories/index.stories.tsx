@@ -3,99 +3,32 @@ import { storiesOf } from '@storybook/react';
 import { withNotes } from '@storybook/addon-notes';
 import { button, number, boolean } from '@storybook/addon-knobs';
 
-import TempoSelector from 'Tempo/TempoSelector';
-import Tempo from 'Tempo/Tempo';
+import CounterTimeRing from 'Ring/Ring';
 
-const refTempoSelector: RefObject<TempoSelector> = createRef<TempoSelector>();
-const refTempo: RefObject<Tempo> = createRef<Tempo>();
+const refCounterTimeRing: RefObject<CounterTimeRing> = createRef<CounterTimeRing>();
 
-const stories = {
-  tempo: storiesOf('Tempo', module),
-};
-
-stories.tempo
-  .add('selector', () => {
-      const defaultTempo = {
-        from: number('Default tempo from', 90),
-        to: number('Default tempo to', 120)
-      };
-      const range = {
-        from: number('Range from', 50),
-        to: number('Range to', 200)
-      };
-      const maxDelta = number('Max delta', 100);
-      const isHandlerEnabled = boolean('isHandlerEnabled', true);
-      const isDescEnabled = boolean('isDescEnabled', false);
-      button('getChildrenTempo()', () => {
-        console.log(refTempoSelector.current!.getChildrenTempo());
-      });
-      return (
-        <TempoSelector 
-          ref={refTempoSelector} 
-          defaultTempo={defaultTempo} 
-          range={range} 
-          maxDelta={maxDelta} 
-          isHandlerEnabled={isHandlerEnabled} 
-          isDescEnabled={isDescEnabled} 
-        />
-      );
-    }, {
-      notes: `Buttons to set beginning/final tempo.`
-    }
-  )
-  .add('from', () => {
-      const tempo = number('Tempo', 80);
-      const range = {
-        from: number('Range from', 50),
-        to: number('Range to', 200)
-      };
-      const maxDelta = number('Max delta', 100);
-      const isHandlerEnabled = boolean('isHandlerEnabled', true);
-      button('getCurrentTempo()', () => {
-        console.log(refTempo.current!.tempo);
-      });
-      return (
-        <Tempo 
-          ref={refTempo} 
-          role="from" 
-          tempo={tempo} 
-          range={range} 
-          maxDelta={maxDelta} 
-          isHandlerEnabled={isHandlerEnabled}
-        />
-      );
-    }, {
-      notes: [
-        `A button to set beginning tempo.`,
-        `Slide to change value.`
-      ].join("\n")
-    }
-  )
-  .add('to', () => {
-      const tempo = number('Tempo', 150);
-      const range = {
-        from: number('Range from', 50),
-        to: number('Range to', 200)
-      };
-      const maxDelta = number('Max delta', 100);
-      const isHandlerEnabled = boolean('isHandlerEnabled', true);
-      button('getCurrentTempo()', () => {
-        console.log(refTempo.current!.tempo);
-      });
-      return (
-        <Tempo 
-          ref={refTempo} 
-          role="to" 
-          tempo={tempo} 
-          range={range} 
-          maxDelta={maxDelta} 
-          isHandlerEnabled={isHandlerEnabled}
-        />
-      );
-    }, {
-      notes: [
-        `A button to set beginning tempo.`,
-        `Slide to change value.`
-      ].join("\n")
-    }
-  );
+storiesOf('Ring', module)
+  .add('Non-stepped', () => {
+    button('getProgress()', () => {
+      console.log(refCounterTimeRing.current!.getProgress());
+    });
+    button('reset()', () => {
+      refCounterTimeRing.current!.reset();
+    });
+    button('setProgress(0.375)', () => {
+      refCounterTimeRing.current!.setProgress(0.375);
+    });
+    button('setProgress(0.5)', () => {
+      refCounterTimeRing.current!.setProgress(0.5);
+    });
+    return (
+      <CounterTimeRing 
+        ref={refCounterTimeRing} 
+      />
+    );
+  }, {
+    notes: [
+      `Ring to set and to indicate remaining time.`,
+      `Click and drag is available.`,
+    ].join("\n")
+  });
