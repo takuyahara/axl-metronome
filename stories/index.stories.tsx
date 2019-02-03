@@ -3,65 +3,29 @@ import { storiesOf } from '@storybook/react';
 import { withNotes } from '@storybook/addon-notes';
 import { button, number, boolean } from '@storybook/addon-knobs';
 
-import CounterTimeRingStepped from 'Ring/RingStepped';
-import CounterTimeRing from 'Ring/Ring';
+import CounterTimeIndicator from 'Indicator/Indicator';
 
-const refCounterTimeRingStepped: RefObject<CounterTimeRingStepped> = createRef<CounterTimeRingStepped>();
-const refCounterTimeRing: RefObject<CounterTimeRing> = createRef<CounterTimeRing>();
+const refCounterTimeIndicator: RefObject<CounterTimeIndicator> = createRef<CounterTimeIndicator>();
 
-storiesOf('Ring', module)
-  .add('Stepped', () => {
-    const step = number('Step', 10, {
-      range: true,
-      min: 1,
-      max: 100,
-      step: 1,
-    });
-    button('getProgress()', () => {
-      console.log(refCounterTimeRingStepped.current!.getProgress());
-    });
-    button('reset()', () => {
-      refCounterTimeRingStepped.current!.reset();
-    });
-    button('setProgress(0.375)', () => {
-      refCounterTimeRingStepped.current!.setProgress(0.375);
-    });
-    button('setProgress(0.5)', () => {
-      refCounterTimeRingStepped.current!.setProgress(0.5);
-    });
+storiesOf('Counter', module)
+  .add('Indicator', () => {
+    const remaining = number('Remaining time in seconds', 900);
+    const postProcess = {
+      onCount: (remaining: number) => {},
+      onCountStart: () => {},
+      onCountStop: () => {},
+      onCountComplete: (remaining: number) => {},
+    };
     return (
-      <CounterTimeRingStepped 
-        ref={refCounterTimeRingStepped} 
-        step={step}
+      <CounterTimeIndicator 
+        ref={refCounterTimeIndicator} 
+        timeToCount={remaining} 
+        postProcess={{...postProcess}}
       />
     );
   }, {
     notes: [
-      `Ring to set and to indicate remaining time.`,
-      `Click and drag is available.`,
-    ].join("\n")
-  })
-  .add('Non-stepped', () => {
-    button('getProgress()', () => {
-      console.log(refCounterTimeRing.current!.getProgress());
-    });
-    button('reset()', () => {
-      refCounterTimeRing.current!.reset();
-    });
-    button('setProgress(0.375)', () => {
-      refCounterTimeRing.current!.setProgress(0.375);
-    });
-    button('setProgress(0.5)', () => {
-      refCounterTimeRing.current!.setProgress(0.5);
-    });
-    return (
-      <CounterTimeRing 
-        ref={refCounterTimeRing} 
-      />
-    );
-  }, {
-    notes: [
-      `Ring to set and to indicate remaining time.`,
-      `Click and drag is available.`,
+      `Button to start/stop counting time and to indicate remaining time.`,
+      `Click to start/stop counting. When counting completed value turns back to original one.`,
     ].join("\n")
   });

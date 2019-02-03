@@ -151,7 +151,7 @@
       "^.+\\.module\\.(css|sass|scss)$"
     ],
     "moduleNameMapper": {
-      "^Ring/(.+)": "<rootDir>/src/Ring/$1",
+      "^Indicator/(.+)": "<rootDir>/src/Indicator/$1",
       "^react-native$": "react-native-web",
       "^__tests__/(.+)": "<rootDir>/__tests__/$1",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"

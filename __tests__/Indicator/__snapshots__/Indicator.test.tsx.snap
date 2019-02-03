@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Indicator MouseEvents clicks 1 time 1`] = `
+<Indicator
+  postProcess={
+    Object {
+      "onCount": [Function],
+      "onCountComplete": [Function],
+      "onCountStart": [Function],
+      "onCountStop": [Function],
+    }
+  }
+  timeToCount={900}
+>
+  <div
+    className="indicator"
+    onClick={[Function]}
+  >
+    <div
+      className="remaining"
+    >
+      14:58
+    </div>
+  </div>
+</Indicator>
+`;
+
+exports[`Indicator MouseEvents clicks 2 times 1`] = `
+<Indicator
+  postProcess={
+    Object {
+      "onCount": [Function],
+      "onCountComplete": [Function],
+      "onCountStart": [Function],
+      "onCountStop": [Function],
+    }
+  }
+  timeToCount={900}
+>
+  <div
+    className="indicator"
+    onClick={[Function]}
+  >
+    <div
+      className="remaining"
+    >
+      14:58
+    </div>
+  </div>
+</Indicator>
+`;
+
+exports[`Indicator MouseEvents clicks 3 times 1`] = `
+<Indicator
+  postProcess={
+    Object {
+      "onCount": [Function],
+      "onCountComplete": [Function],
+      "onCountStart": [Function],
+      "onCountStop": [Function],
+    }
+  }
+  timeToCount={900}
+>
+  <div
+    className="indicator"
+    onClick={[Function]}
+  >
+    <div
+      className="remaining"
+    >
+      14:56
+    </div>
+  </div>
+</Indicator>
+`;

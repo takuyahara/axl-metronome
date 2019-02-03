@@ -1,7 +1,7 @@
 import React, { Component, createRef, RefObject } from 'react';
 import _ from 'lodash';
 import style from './App.module.scss';
-import Ring from './Ring/Ring';
+import Indicator from './Indicator/Indicator';
 
 interface IProps {
   // empty
@@ -38,9 +38,18 @@ class App extends Component<IProps, IState> {
     this.init(newProps);
   }
   public render(): React.ReactNode {
+    const postProcess = {
+      onCount: (remaining: number) => {},
+      onCountStart: () => {},
+      onCountStop: () => {},
+      onCountComplete: (remaining: number) => {},
+    };
     return (
       <div className={style.App}>
-        <Ring />
+        <Indicator 
+          timeToCount={15 * 60} 
+          postProcess={{...postProcess}}
+        />
       </div>
     );
   }
