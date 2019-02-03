@@ -2,10 +2,10 @@ import React, { Component, createRef, RefObject } from 'react';
 import _ from 'lodash';
 import style from './App.module.scss';
 import TempoSelector from './Tempo/TempoSelector';
-import * as configcat from "configcat-node";
-const configCatClient = configcat.createClient("PIjWCOBb9OZa_oaa7Igmyg/Ijc1BKL_IEy-rRjFtmCvGg");
+import * as configcat from 'configcat-node';
+const configCatClient = configcat.createClient(process.env.CC_API!);
 const myUser = { 
-  identifier: "435170f4-8a8b-4b67-a723-505ac7cdea92",
+  identifier: process.env.CC_ID!,
 };
 
 interface IProps {
@@ -34,7 +34,9 @@ class App extends Component<IProps, IState> {
 }
   private init(props: IProps): void {
     this.isDescEnabled = true;
-    configCatClient.getValue("isDescEnabled", this.isDescEnabled, (value: boolean) => {
+  }
+  public componentWillMount(): void {
+    configCatClient.getValue("isdescenabled", this.isDescEnabled, (value: boolean) => {
       this.isDescEnabled = value;
       this.forceUpdate();
     }, myUser);
