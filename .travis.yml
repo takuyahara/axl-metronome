@@ -4,7 +4,6 @@ node_js:
 before_install:
 - yarn global add codecov snyk
 before_script:
-- ls node_modules_patch/ | awk '{system("cp -rp node_modules_patch/"$1" node_modules")}'
 - yarn pre-commit
 script:
 - yarn coverage

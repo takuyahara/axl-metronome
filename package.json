@@ -85,6 +85,7 @@
     "build": "node scripts/build.js",
     "test": "yarn test-unwatch --watchAll",
     "test-unwatch": "env-cmd .env jest --forceExit --detectOpenHandles",
+    "patch": "ls node_modules_patch/ | awk '{system(\"cp -rp node_modules_patch/\"$1\" node_modules\")}'",
     "snyk": "snyk test",
     "coverage": "rm -rf coverage && yarn test-unwatch --coverage",
     "storybook": "start-storybook -p 6006",
