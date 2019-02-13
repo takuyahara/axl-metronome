@@ -84,6 +84,17 @@ describe('Tempo', () => {
     });
 
     describe('MouseEvent', () => {
+      it('mouseMove and nothing happens', () => {
+        tempo.find('.from').simulate('mousemove', {
+          type: 'mousemove',
+          clientX: 300,
+          clientY: 0,
+        });
+
+        expect(spy.Tempo.getDist.notCalled).toBe(true);
+        expect(spy.Tempo.changeTempo.notCalled).toBe(true);
+      });
+
       it('mouseDown', () => {
         tempo.find('.from').simulate('mousedown', {
           type: 'mousedown',
@@ -175,6 +186,21 @@ describe('Tempo', () => {
     });
 
     describe('TouchEvent', () => {
+      it('touchMove and nothing happens', () => {
+        tempo.find('.from').simulate('touchmove', {
+          type: "touchmove",
+          changedTouches: [
+            {
+              clientX: 300,
+              clientY: 0,
+            },
+          ],
+        });
+
+        expect(spy.Tempo.getDist.notCalled).toBe(true);
+        expect(spy.Tempo.changeTempo.notCalled).toBe(true);
+      });
+
       it('touchStart', () => {
         tempo.find('.from').simulate('touchstart', {
           type: "touchstart",
@@ -326,27 +352,6 @@ describe('Tempo', () => {
     
       // Sinon - reset
       sinon.resetHistory();
-    });
-
-    it('returns current tempo', () => {
-      tempo.children('.from').simulate('mousedown', {});
-
-      expect(tempoInstance.tempo).toBe(80);
-    });
-
-    it('changes tempo', () => {
-      tempoInstance.changeTempo(150);
-      expect(tempoInstance.tempo).toBe(150);
-    });
-
-    it('normalize tempo to min when passed value is less than than min', () => {
-      tempoInstance.changeTempo(30);
-      expect(tempoInstance.tempo).toBe(50);
-    });
-
-    it('normalize tempo to max when passed value is more than than max', () => {
-      tempoInstance.changeTempo(300);
-      expect(tempoInstance.tempo).toBe(200);
     });
 
     describe('MouseEvent', () => {

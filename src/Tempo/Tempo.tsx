@@ -82,6 +82,7 @@ class Tempo extends Component<IProps, IState> {
       handlerToRun(e);
     }
   }
+  /* istanbul ignore next */
   private isPortrait(): boolean {
     // return ['portrait-primary', 'portrait-secondary'].includes(
     //   // tslint:disable-next-line:no-any
@@ -118,19 +119,7 @@ class Tempo extends Component<IProps, IState> {
     this.isTapped = false;
     this.tempoPrev = this.state.tempoCurr;
   }
-  private updateRange(newRange: IProps['range']): void {
-    if (this.state.tempoCurr < newRange.from) { 
-      this.setState({
-        tempoCurr: newRange.from,
-      });
-      this.tempoPrev = newRange.from;
-    } else if (this.state.tempoCurr > newRange.to) { 
-      this.setState({
-        tempoCurr: newRange.to,
-      });
-      this.tempoPrev = newRange.to;
-    }
-  }
+  /* istanbul ignore next */
   private getBCRSize(elem: HTMLElement): IBCRSize {
     // Excluded to be replaced in test.
     const { width, height } = elem.getBoundingClientRect();
@@ -175,11 +164,13 @@ class Tempo extends Component<IProps, IState> {
     const distNormalized = (dist / length) * this.maxDelta;
     return distNormalized;
   }
+  /* istanbul ignore next */
   public componentWillMount(): void {
     if (this.props.inheritedSelector) {
-      Utils.inheritSelector(style, this.props.inheritedSelector);
+      Utils.inheritSelector(style, this.props.inheritedSelector!);
     }
   }
+  /* istanbul ignore next */
   public componentWillReceiveProps(newProps: IProps): void {
     if (_.isEqual(this.props, newProps)) {
       return;
@@ -187,7 +178,20 @@ class Tempo extends Component<IProps, IState> {
 
     this.init(newProps);
     newProps.tempo !== this.props.tempo && this.changeTempo(newProps.tempo, true);
-    this.updateRange(newProps.range);
+    const updateRange = (newRange: IProps['range']) => {
+      if (this.state.tempoCurr < newRange.from) { 
+        this.setState({
+          tempoCurr: newRange.from,
+        });
+        this.tempoPrev = newRange.from;
+      } else if (this.state.tempoCurr > newRange.to) { 
+        this.setState({
+          tempoCurr: newRange.to,
+        });
+        this.tempoPrev = newRange.to;
+      }
+    };
+    updateRange(newProps.range);
   }
   public render(): React.ReactNode {
     return (
