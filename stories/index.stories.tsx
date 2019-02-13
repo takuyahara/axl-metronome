@@ -1,6 +1,5 @@
 import React, { createRef, RefObject } from 'react';
 import { storiesOf } from '@storybook/react';
-import { withNotes } from '@storybook/addon-notes';
 import { button, number, boolean } from '@storybook/addon-knobs';
 
 import Tempo from 'Tempo/Tempo';
@@ -12,7 +11,7 @@ storiesOf('Tempo', module)
       const tempo = number('Tempo', 80);
       const range = {
         from: number('Range from', 50),
-        to: number('Range to', 200)
+        to: number('Range to', 200),
       };
       const maxDelta = number('Max delta', 100);
       const isHandlerEnabled = boolean('isHandlerEnabled', true);
@@ -32,15 +31,15 @@ storiesOf('Tempo', module)
     }, {
       notes: [
         `A button to set beginning tempo.`,
-        `Slide to change value.`
-      ].join("\n")
-    }
+        `Slide to change value.`,
+      ].join("\n"),
+    },
   )
   .add('to', () => {
       const tempo = number('Tempo', 150);
       const range = {
         from: number('Range from', 50),
-        to: number('Range to', 200)
+        to: number('Range to', 200),
       };
       const maxDelta = number('Max delta', 100);
       const isHandlerEnabled = boolean('isHandlerEnabled', true);
@@ -60,7 +59,7 @@ storiesOf('Tempo', module)
     }, {
       notes: [
         `A button to set beginning tempo.`,
-        `Slide to change value.`
-      ].join("\n")
-    }
+        `Slide to change value.`,
+      ].join("\n"),
+    },
   );

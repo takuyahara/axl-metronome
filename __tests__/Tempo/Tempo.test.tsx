@@ -6,7 +6,7 @@ import Tempo from 'Tempo/Tempo';
 
 interface ISpy {
   [s: string]: {
-    [s: string]: sinon.SinonSpy,
+    [s: string]: sinon.SinonSpy;
   };
 }
 

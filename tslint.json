@@ -9,11 +9,7 @@
       "node_modules_patch/**/*.ts",
       "coverage/lcov-report/*.js",
       ".storybook/**/*.js",
-      ".storybook/**/*.tsx",
-      "stories/**/*.js",
-      "stories/**/*.tsx",
-      "__tests__/**/*.js",
-      "__tests__/**/*.tsx"
+      "./*.js"
     ]
   },
   "rules": {
