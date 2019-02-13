@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`from / to MouseEvent mouseDown => mouseMove => mouseUp 1`] = `
+exports[`Tempo isPortrait = false MouseEvent mouseDown => mouseMove => mouseUp 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -31,7 +31,7 @@ exports[`from / to MouseEvent mouseDown => mouseMove => mouseUp 1`] = `
 </Tempo>
 `;
 
-exports[`from / to MouseEvent mouseDown => mouseMove 1`] = `
+exports[`Tempo isPortrait = false MouseEvent mouseDown => mouseMove 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -62,7 +62,7 @@ exports[`from / to MouseEvent mouseDown => mouseMove 1`] = `
 </Tempo>
 `;
 
-exports[`from / to MouseEvent mouseDown 1`] = `
+exports[`Tempo isPortrait = false MouseEvent mouseDown 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -93,7 +93,7 @@ exports[`from / to MouseEvent mouseDown 1`] = `
 </Tempo>
 `;
 
-exports[`from / to MouseEvent toggleHandler() * 2 => mouseDown => mouseMove => mouseUp 1`] = `
+exports[`Tempo isPortrait = false MouseEvent toggleHandler() * 2 => mouseDown => mouseMove => mouseUp 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -124,7 +124,7 @@ exports[`from / to MouseEvent toggleHandler() * 2 => mouseDown => mouseMove => m
 </Tempo>
 `;
 
-exports[`from / to MouseEvent toggleHandler() => mouseDown => mouseMove => mouseUp 1`] = `
+exports[`Tempo isPortrait = false MouseEvent toggleHandler() => mouseDown => mouseMove => mouseUp 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -155,7 +155,7 @@ exports[`from / to MouseEvent toggleHandler() => mouseDown => mouseMove => mouse
 </Tempo>
 `;
 
-exports[`from / to TouchEvent toggleHandler() * 2 => touchStart => touchMove => touchEnd 1`] = `
+exports[`Tempo isPortrait = false TouchEvent toggleHandler() * 2 => touchStart => touchMove => touchEnd 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -186,7 +186,7 @@ exports[`from / to TouchEvent toggleHandler() * 2 => touchStart => touchMove => 
 </Tempo>
 `;
 
-exports[`from / to TouchEvent toggleHandler() => touchStart => touchMove => touchEnd 1`] = `
+exports[`Tempo isPortrait = false TouchEvent toggleHandler() => touchStart => touchMove => touchEnd 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -217,7 +217,7 @@ exports[`from / to TouchEvent toggleHandler() => touchStart => touchMove => touc
 </Tempo>
 `;
 
-exports[`from / to TouchEvent touchStart => touchMove => touchEnd 1`] = `
+exports[`Tempo isPortrait = false TouchEvent touchStart => touchMove => touchEnd 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -248,7 +248,7 @@ exports[`from / to TouchEvent touchStart => touchMove => touchEnd 1`] = `
 </Tempo>
 `;
 
-exports[`from / to TouchEvent touchStart => touchMove 1`] = `
+exports[`Tempo isPortrait = false TouchEvent touchStart => touchMove 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -279,7 +279,7 @@ exports[`from / to TouchEvent touchStart => touchMove 1`] = `
 </Tempo>
 `;
 
-exports[`from / to TouchEvent touchStart 1`] = `
+exports[`Tempo isPortrait = false TouchEvent touchStart 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -310,7 +310,7 @@ exports[`from / to TouchEvent touchStart 1`] = `
 </Tempo>
 `;
 
-exports[`from / to changes tempo 1`] = `
+exports[`Tempo isPortrait = false changes tempo 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -341,7 +341,7 @@ exports[`from / to changes tempo 1`] = `
 </Tempo>
 `;
 
-exports[`from / to normalize tempo to max when passed value is more than than max 1`] = `
+exports[`Tempo isPortrait = false normalize tempo to max when passed value is more than than max 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -372,7 +372,7 @@ exports[`from / to normalize tempo to max when passed value is more than than ma
 </Tempo>
 `;
 
-exports[`from / to normalize tempo to min when passed value is less than than min 1`] = `
+exports[`Tempo isPortrait = false normalize tempo to min when passed value is less than than min 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}
@@ -403,7 +403,441 @@ exports[`from / to normalize tempo to min when passed value is less than than mi
 </Tempo>
 `;
 
-exports[`from / to returns current tempo 1`] = `
+exports[`Tempo isPortrait = false returns current tempo 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true MouseEvent mouseDown => mouseMove => mouseUp 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      120
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true MouseEvent mouseDown => mouseMove 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      120
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true MouseEvent mouseDown 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true MouseEvent toggleHandler() * 2 => mouseDown => mouseMove => mouseUp 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      120
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true MouseEvent toggleHandler() => mouseDown => mouseMove => mouseUp 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true TouchEvent toggleHandler() * 2 => touchStart => touchMove => touchEnd 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      120
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true TouchEvent toggleHandler() => touchStart => touchMove => touchEnd 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true TouchEvent touchStart => touchMove => touchEnd 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      120
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true TouchEvent touchStart => touchMove 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      120
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true TouchEvent touchStart 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true changes tempo 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true normalize tempo to max when passed value is more than than max 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true normalize tempo to min when passed value is less than than min 1`] = `
+<Tempo
+  isHandlerEnabled={true}
+  maxDelta={100}
+  range={
+    Object {
+      "from": 50,
+      "to": 200,
+    }
+  }
+  role="from"
+  tempo={80}
+>
+  <div
+    className="from"
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+  >
+    <span
+      className="tempoValue"
+    >
+      80
+    </span>
+  </div>
+</Tempo>
+`;
+
+exports[`Tempo isPortrait = true returns current tempo 1`] = `
 <Tempo
   isHandlerEnabled={true}
   maxDelta={100}

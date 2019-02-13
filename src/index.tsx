@@ -12,14 +12,8 @@ const bugsnagClient = bugsnag({
 });
 bugsnagClient.use(bugsnagReact, React);
 
-// wrap your entire app tree in the ErrorBoundary provided
-// tslint:disable-next-line:variable-name
-const ErrorBoundary = bugsnagClient.getPlugin('react');
-
 ReactDOM.render(
-  <ErrorBoundary>
-    <App />
-  </ErrorBoundary>,
+  <App />,
   document.getElementById('root') as HTMLElement,
 );
 

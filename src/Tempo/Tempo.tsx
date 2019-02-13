@@ -1,6 +1,7 @@
 import React, { Component, createRef, RefObject } from 'react';
 import _ from 'lodash';
 import style from './Tempo.module.scss';
+import Utils, { ICssSelector } from '../Utils';
 
 interface IState {
   tempoCurr: number;
@@ -15,6 +16,11 @@ interface IProps {
   };
   isHandlerEnabled?: boolean;
   onChangeTempo?: (t: Tempo) => void;
+  inheritedSelector?: ICssSelector;
+}
+interface IBCRSize {
+  width: number;
+  height: number;
 }
 interface IHandlers {
   [key: string]: (e: React.MouseEvent | React.TouchEvent) => void;
@@ -76,6 +82,13 @@ class Tempo extends Component<IProps, IState> {
       handlerToRun(e);
     }
   }
+  private isPortrait(): boolean {
+    // return ['portrait-primary', 'portrait-secondary'].includes(
+    //   // tslint:disable-next-line:no-any
+    //   ((screen as any).orientation || (screen as any).mozOrientation || (screen as any).msOrientation).type,
+    // );
+    return document.body.clientHeight > document.body.clientWidth;
+  }
   private mouseMove(e: React.MouseEvent | React.TouchEvent): void {
     const isMouseEvent = e.type.substr(0, 5) === 'mouse';
     isMouseEvent && e.preventDefault();
@@ -83,7 +96,8 @@ class Tempo extends Component<IProps, IState> {
     
     const tempoPrev = this.tempoPrev;
     const clientX = isMouseEvent ? (e as React.MouseEvent).clientX : (e as React.TouchEvent).changedTouches[0].clientX;
-    const dist = this.getDist(this.distFrom, clientX);
+    const clientY = isMouseEvent ? (e as React.MouseEvent).clientY : (e as React.TouchEvent).changedTouches[0].clientY;
+    const dist = this.isPortrait() ? this.getDist(this.distFrom, clientX) : this.getDist(clientY, this.distFrom);
     const newTempo = tempoPrev + parseInt(dist.toString());
     this.changeTempo(newTempo);
   }
@@ -92,7 +106,8 @@ class Tempo extends Component<IProps, IState> {
     isMouseEvent && e.preventDefault();
 
     const clientX = isMouseEvent ? (e as React.MouseEvent).clientX : (e as React.TouchEvent).changedTouches[0].clientX;
-    this.distFrom = clientX;
+    const clientY = isMouseEvent ? (e as React.MouseEvent).clientY : (e as React.TouchEvent).changedTouches[0].clientY;
+    this.distFrom = this.isPortrait() ? clientX : clientY;
     this.isTapped = true;
     this.tempoPrev = this.state.tempoCurr;
   }
@@ -116,9 +131,13 @@ class Tempo extends Component<IProps, IState> {
       this.tempoPrev = newRange.to;
     }
   }
-  private getWidth(elem: HTMLElement): number {
+  private getBCRSize(elem: HTMLElement): IBCRSize {
     // Excluded to be replaced in test.
-    return elem.getBoundingClientRect().width;
+    const { width, height } = elem.getBoundingClientRect();
+    return {
+      width,
+      height,
+    };
   }
   private normalizeTempo(tempo: number): number {
     let newTempo = tempo;
@@ -150,10 +169,16 @@ class Tempo extends Component<IProps, IState> {
   }
   public getDist(distFrom: number, distTo: number): number {
     const refDiv = this.refDiv.current!;
-    const width = this.getWidth(refDiv);
+    const { width, height } = this.getBCRSize(refDiv);
     const dist = distTo - distFrom;
-    const distNormalized = (dist / width) * this.maxDelta;
+    const length = this.isPortrait() ? width : height;
+    const distNormalized = (dist / length) * this.maxDelta;
     return distNormalized;
+  }
+  public componentWillMount(): void {
+    if (this.props.inheritedSelector) {
+      Utils.inheritSelector(style, this.props.inheritedSelector);
+    }
   }
   public componentWillReceiveProps(newProps: IProps): void {
     if (_.isEqual(this.props, newProps)) {

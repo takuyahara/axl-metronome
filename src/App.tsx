@@ -30,6 +30,12 @@ class App extends Component<IProps, IState> {
   private init(props: IProps): void {
     // empty
   }
+  public componentDidMount(): void {
+    const root = document.getElementById('root')!;
+    root.addEventListener('touchstart', e => {
+      e.preventDefault();
+    });
+  }
   public componentWillReceiveProps(newProps: IProps): void {
     if (_.isEqual(this.props, newProps)) {
       return;
