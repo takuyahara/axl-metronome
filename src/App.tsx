@@ -1,7 +1,7 @@
 import React, { Component, createRef, RefObject } from 'react';
 import _ from 'lodash';
 import style from './App.module.scss';
-import Ring from './Ring/Ring';
+import Indicator from './Indicator/Indicator';
 
 interface IProps {
   // empty
@@ -46,7 +46,9 @@ class App extends Component<IProps, IState> {
   public render(): React.ReactNode {
     return (
       <div className={style.App}>
-        <Ring />
+        <Indicator 
+          timeToCount={15 * 60} 
+        />
       </div>
     );
   }
