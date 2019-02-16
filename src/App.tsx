@@ -1,25 +1,52 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, createRef, RefObject } from 'react';
+import _ from 'lodash';
+import style from './App.module.scss';
+import Ring from './Ring/Ring';
 
-class App extends Component {
-  render() {
+interface IProps {
+  // empty
+}
+interface IState {
+  // empty
+}
+
+class App extends Component<IProps, IState> {
+  // Initialize in init()
+  // empty
+
+  // Ref
+  // empty
+
+  public constructor(props: IProps) {
+    super(props);
+    this.state = {
+      // empty
+    };
+    this.init(props);
+
+    // Ref
+    // empty
+}
+  private init(props: IProps): void {
+    // empty
+  }
+  public componentDidMount(): void {
+    const root = document.getElementById('root')!;
+    root.addEventListener('touchstart', e => {
+      e.preventDefault();
+    });
+  }
+  public componentWillReceiveProps(newProps: IProps): void {
+    if (_.isEqual(this.props, newProps)) {
+      return;
+    }
+
+    this.init(newProps);
+  }
+  public render(): React.ReactNode {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={style.App}>
+        <Ring />
       </div>
     );
   }
