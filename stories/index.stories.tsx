@@ -1,54 +1,99 @@
 import React, { createRef, RefObject } from 'react';
 import { storiesOf } from '@storybook/react';
-import { number } from '@storybook/addon-knobs';
+import { button, number } from '@storybook/addon-knobs';
 
-import BeatAxl from 'Beat/BeatAxl';
-import Beat from 'Beat/Beat';
+import Time from 'Time/Time';
+import Indicator from 'Time/Indicator';
+import RingStepped from 'Time/RingStepped';
+import Ring from 'Time/Ring';
 
-const refBeatAxl: RefObject<BeatAxl> = createRef<BeatAxl>();
-const refBeat: RefObject<Beat> = createRef<Beat>();
+const refTime: RefObject<Time> = createRef<Time>();
+const refIndicator: RefObject<Indicator> = createRef<Indicator>();
+const refRingStepped: RefObject<RingStepped> = createRef<RingStepped>();
+const refRing: RefObject<Ring> = createRef<Ring>();
 
-storiesOf('Beat', module)
-  .add('BeatAxl', () => {
-    const remaining = number('Remaining time', 30);
-    const tempo = {
-      from: number('Tempo from', 90),
-      to: number('Tempo to', 150),
-    };
-    // button('toggle()', () => {
-    //   refCounterBeatAxl.toggle();
-    // });
-    // button('startBeat()', () => {
-    //   this.ct.startBeat();
-    // });
-    // button('stopBeat()', () => {
-    //   this.ct.stopBeat();
-    // });
+storiesOf('Time', module)
+  .add('Time', () => {
+    const remaining = number('Remaining time in seconds', 10);
     return (
-      <BeatAxl
-        ref={refBeatAxl}
-        tempo={tempo} 
-        remaining={remaining}
+      <Time 
+        ref={refTime}
+        remaining={remaining} 
       />
     );
   }, {
-    notes: `Indicates current tempo and increases/decreases beat.`,
+    notes: [
+      `Combination of Indicator and Ring.`,
+      `Click Indicator to start/stop counting time. Ring also indicates remaining time.`,
+      `Click and drag Ring to change time to count. Indicator stops counting and value will be reflected immediately.current!.`,
+    ].join("\n"),
   })
-  .add('Beat', () => {
-    const tempo = number('Tempo', 90);
-    // button('toggle()', () => {
-    //   refCounterBeat.toggle();
-    // });
+  .add('Indicator', () => {
+    const remaining = number('Remaining time in seconds', 900);
     return (
-      <Beat 
-        ref={refBeat}
-        tempo={tempo} 
-        tempoRange={{
-          from: 1,
-          to: 999,
-        }}
+      <Indicator 
+        ref={refIndicator} 
+        timeToCount={remaining} 
       />
     );
   }, {
-    notes: `Indicates current tempo and beats in consistent tempo.`,
+    notes: [
+      `Button to start/stop counting time and to indicate remaining time.`,
+      `Click to start/stop counting. When counting completed value turns back to original one.`,
+    ].join("\n"),
+  })
+  .add('Ring Stepped', () => {
+    const step = number('Step', 10, {
+      range: true,
+      min: 1,
+      max: 100,
+      step: 1,
+    });
+    button('getProgress()', () => {
+      console.log(refRingStepped.current!.getProgress());
+    });
+    button('reset()', () => {
+      refRingStepped.current!.reset();
+    });
+    button('setProgress(0.375)', () => {
+      refRingStepped.current!.setProgress(0.375);
+    });
+    button('setProgress(0.5)', () => {
+      refRingStepped.current!.setProgress(0.5);
+    });
+    return (
+      <RingStepped 
+        ref={refRingStepped} 
+        step={step}
+      />
+    );
+  }, {
+    notes: [
+      `Ring to set and to indicate remaining time.`,
+      `Click and drag is available.`,
+    ].join("\n"),
+  })
+  .add('Ring Non-stepped', () => {
+    button('getProgress()', () => {
+      console.log(refRing.current!.getProgress());
+    });
+    button('reset()', () => {
+      refRing.current!.reset();
+    });
+    button('setProgress(0.375)', () => {
+      refRing.current!.setProgress(0.375);
+    });
+    button('setProgress(0.5)', () => {
+      refRing.current!.setProgress(0.5);
+    });
+    return (
+      <Ring 
+        ref={refRing} 
+      />
+    );
+  }, {
+    notes: [
+      `Ring to set and to indicate remaining time.`,
+      `Click and drag is available.`,
+    ].join("\n"),
   });
