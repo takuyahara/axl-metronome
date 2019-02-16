@@ -2,9 +2,9 @@ import React from 'react';
 import { configure, mount, ReactWrapper } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import sinon from 'sinon';
-import Indicator from 'Indicator/Indicator';
-import Timer from 'Indicator/Timer';
-import Status from 'Indicator/Status';
+import Indicator from 'Time/Indicator';
+import Timer from 'Time/Timer';
+import Status from 'Time/Status';
 
 interface ISpy {
   [s: string]: {

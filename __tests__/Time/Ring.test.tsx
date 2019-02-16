@@ -2,7 +2,7 @@ import React from 'react';
 import { configure, mount, ReactWrapper } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import sinon from 'sinon';
-import { default as Ring } from 'Ring/RingStepped';
+import Ring from 'Time/Ring';
 
 configure({ adapter: new Adapter() });
 
@@ -27,9 +27,7 @@ describe('Ring', () => {
     }));
 
     // Mounts VDOM and makes instance.
-    ring = mount(<Ring
-      step={5}
-    />);
+    ring = mount(<Ring />);
     ringInstance = ring.instance() as Ring;
 
     sinon.resetHistory();
@@ -46,8 +44,8 @@ describe('Ring', () => {
   it('changes progress', () => {
     ringInstance.setProgress(0.5);
     expect(spy.updateStrokeDasharray.calledOnce).toBe(true);
-    expect(ringInstance.getProgress()).toBe(0.4);
-    expect(ringInstance.state.strokeDasharray).toBe("364.424747816416 911.06186954104");
+    expect(ringInstance.getProgress()).toBe(0.5);
+    expect(ringInstance.state.strokeDasharray).toBe("455.53093477052 911.06186954104");
   });
 
   it('resets progress', () => {
@@ -91,7 +89,7 @@ describe('Ring', () => {
       });
 
       expect(spy.setProgress.calledOnce).toBe(true);
-      expect(ringInstance.getProgress()).toBe(0.4);
+      expect(ringInstance.getProgress()).toBe(0.5);
       expect(ringInstance.state.isTapped).toBe(true);
     });
 
@@ -107,7 +105,7 @@ describe('Ring', () => {
       });
 
       expect(spy.setProgress.calledTwice).toBe(true);
-      expect(ringInstance.getProgress()).toBe(0.2);
+      expect(ringInstance.getProgress()).toBe(0.25);
       expect(ringInstance.state.isTapped).toBe(true);
     });
 
@@ -125,7 +123,7 @@ describe('Ring', () => {
       ring.find('.globalTapArea').simulate('mouseup');
 
       expect(spy.setProgress.calledTwice).toBe(true);
-      expect(ringInstance.getProgress()).toBe(0.2);
+      expect(ringInstance.getProgress()).toBe(0.25);
       expect(ringInstance.state.isTapped).toBe(false);
     });
   });
@@ -153,7 +151,7 @@ describe('Ring', () => {
       });
 
       expect(spy.setProgress.calledOnce).toBe(true);
-      expect(ringInstance.getProgress()).toBe(0.4);
+      expect(ringInstance.getProgress()).toBe(0.5);
       expect(ringInstance.state.isTapped).toBe(true);
     });
 
@@ -173,7 +171,7 @@ describe('Ring', () => {
       });
 
       expect(spy.setProgress.calledTwice).toBe(true);
-      expect(ringInstance.getProgress()).toBe(0.2);
+      expect(ringInstance.getProgress()).toBe(0.25);
       expect(ringInstance.state.isTapped).toBe(true);
     });
 
@@ -195,7 +193,7 @@ describe('Ring', () => {
       ring.find('.globalTapArea').simulate('touchend');
 
       expect(spy.setProgress.calledTwice).toBe(true);
-      expect(ringInstance.getProgress()).toBe(0.2);
+      expect(ringInstance.getProgress()).toBe(0.25);
       expect(ringInstance.state.isTapped).toBe(false);
     });
   });

@@ -2,7 +2,7 @@ import React from 'react';
 import { configure, mount, ReactWrapper } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import sinon from 'sinon';
-import Remaining from 'Indicator/Remaining';
+import Remaining from 'Time/Remaining';
 
 interface ISpy {
   [s: string]: sinon.SinonSpy;
