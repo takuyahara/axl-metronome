@@ -1,7 +1,7 @@
 import React, { Component, createRef, RefObject } from 'react';
 import _ from 'lodash';
 import style from './App.module.scss';
-import Time from './Time/Time';
+import Counter from './Counter/Counter';
 
 interface IProps {
   // empty
@@ -30,12 +30,6 @@ class App extends Component<IProps, IState> {
   private init(props: IProps): void {
     // empty
   }
-  public componentDidMount(): void {
-    const root = document.getElementById('root')!;
-    root.addEventListener('touchstart', e => {
-      e.preventDefault();
-    });
-  }
   public componentWillReceiveProps(newProps: IProps): void {
     if (_.isEqual(this.props, newProps)) {
       return;
@@ -46,11 +40,16 @@ class App extends Component<IProps, IState> {
   public render(): React.ReactNode {
     return (
       <div className={style.App}>
-        <Time 
-          remaining={10} 
+        <Counter 
+          remaining={30} 
+          tempo={{
+            from: 90,
+            to: 160,
+          }} 
         />
       </div>
     );
   }
 }
+
 export default App;

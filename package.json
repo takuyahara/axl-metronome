@@ -111,7 +111,7 @@
       "!src/Utils.tsx",
       "!src/App.tsx",
       "!src/index.tsx",
-      "!src/Time/Status.ts",
+      "!src/**/Status.ts",
       "!src/serviceWorker.ts",
       "!**/*.d.ts"
     ],
@@ -137,7 +137,7 @@
       "^.+\\.module\\.(css|sass|scss)$"
     ],
     "moduleNameMapper": {
-      "^Time/(.+)": "<rootDir>/src/Time/$1",
+      "^Counter/(.+)": "<rootDir>/src/Counter/$1",
       "^react-native$": "react-native-web",
       "^__tests__/(.+)": "<rootDir>/__tests__/$1",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
@@ -153,11 +153,6 @@
       "web.jsx",
       "jsx",
       "node"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "react-app"
     ]
   },
   "devDependencies": {
@@ -176,6 +171,7 @@
     "@types/storybook__addon-knobs": "^4.0.0",
     "@types/storybook__addon-notes": "^4.0.1",
     "@types/storybook__react": "^4.0.0",
+    "babel-plugin-react-remove-properties": "^0.3.0",
     "env-cmd": "^8.0.2",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.8.0",
