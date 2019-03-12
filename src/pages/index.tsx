@@ -3,6 +3,7 @@ import SEO from "../components/seo";
 import AxlMetronome from '../components/AxlMetronome/AxlMetronome';
 import bugsnag from '@bugsnag/js';
 import bugsnagReact from '@bugsnag/plugin-react';
+import LogRocket from 'logrocket';
 
 const NODE_CONFIG = JSON.parse(process.env.NODE_CONFIG!);
 const defaultConfig = NODE_CONFIG.AxlMetronome;
@@ -36,6 +37,7 @@ if (process.env.NODE_ENV === 'production') {
     appVersion: process.env.npm_package_version,
   });
   bugsnagClient.use(bugsnagReact, React);
+  LogRocket.init('jqwubt/axl-metronome');
 }
 
 export default IndexPage;
