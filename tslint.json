@@ -6,6 +6,7 @@
   ],
   "linterOptions": {
     "exclude": [
+      "src/html.tsx",
       "src/declarations.d.ts",
       "config/**/*.js",
       "node_modules/**/*.ts",
