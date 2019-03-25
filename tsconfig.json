@@ -28,6 +28,10 @@
       ],
       "AxlMetronome/*": [
         "src/components/AxlMetronome/*"
+      ],
+      "*": [
+        "*",
+        "node_modules_patches/*"
       ]
     }
   }
