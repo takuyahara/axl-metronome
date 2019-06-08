@@ -11,6 +11,11 @@ export interface IProps {
   inheritedSelector?: ICssSelector;
 }
 export interface IState {
+  cx: number;
+  cy: number;
+  ringRadius: number;
+  maskStrokeWidth: number;
+  circleStrokeWidth: number;
   strokeDasharray: string;
   isBubbled: boolean;
 }
@@ -24,17 +29,24 @@ class Ring<P extends IProps = IProps, S extends IState = IState> extends Compone
 
   // Ref
   protected refRing: RefObject<SVGSVGElement>;
+  protected refCircle: RefObject<SVGCircleElement>;
   protected refMask: RefObject<SVGCircleElement>;
 
   public constructor(props: P) {
     super(props);
     this.state = {
+      cx: 0,
+      cy: 0,
+      ringRadius: 0,
+      maskStrokeWidth: 0,
+      circleStrokeWidth: 0,
       strokeDasharray: "",
       isBubbled: false,
     } as S;
 
     // Ref
     this.refRing = createRef<SVGSVGElement>();
+    this.refCircle = createRef<SVGCircleElement>();
     this.refMask = createRef<SVGCircleElement>();
 
     // Post process
@@ -110,12 +122,22 @@ class Ring<P extends IProps = IProps, S extends IState = IState> extends Compone
     }
   }
   /* istanbul ignore next */
-  protected getR(svgObject: SVGElement): number {
-    return parseInt(getComputedStyle(svgObject).getPropertyValue('r'));
+  protected getR(): number {
+    const refRing = this.refRing.current!;
+    const refCircle = this.refCircle.current!;
+    const refMask = this.refMask.current!;
+    const ringRadius = parseInt(getComputedStyle(refRing).getPropertyValue('width')) / 2;
+    const maskStrokeWidth = parseInt(getComputedStyle(refMask).getPropertyValue('stroke-width'));
+    const circleStrokeWidth = parseInt(getComputedStyle(refCircle).getPropertyValue('stroke-width'));
+    this.setState({
+      ringRadius,
+      maskStrokeWidth,
+      circleStrokeWidth,
+    });
+    return ringRadius - maskStrokeWidth / 2 - circleStrokeWidth;
   }
   protected updateStrokeDasharray(): void {
-    const refMask = this.refMask.current!;
-    const r = this.getR(refMask);
+    const r = this.getR();
     const pieLength = r * 2 * Math.PI;
     const strokeDasharray = this.progress * pieLength + " " + pieLength;
     this.setState({
@@ -145,6 +167,12 @@ class Ring<P extends IProps = IProps, S extends IState = IState> extends Compone
   }
   /* istanbul ignore next */
   public componentDidMount(): void {
+    const refRing = this.refRing.current!;
+    const bcr = this.getBoundingClientRect(refRing);
+    this.setState({
+      cx: bcr.width / 2,
+      cy: bcr.height / 2,
+    });
     this.updateStrokeDasharray();
   }
   public render(): React.ReactNode {
@@ -162,16 +190,27 @@ class Ring<P extends IProps = IProps, S extends IState = IState> extends Compone
               </radialGradient>
           </defs>
           <circle 
+            ref={this.refCircle} 
             className={style.remaining} 
+            r={this.state.ringRadius - this.state.circleStrokeWidth / 2} 
+            cx={this.state.cx} 
+            cy={this.state.cy} 
           />
-          <circle ref={this.refMask} 
+          <circle
+            ref={this.refMask} 
             className={style.mask} 
+            r={this.state.ringRadius - this.state.maskStrokeWidth / 2 - this.state.circleStrokeWidth} 
+            cx={this.state.cx} 
+            cy={this.state.cy} 
             stroke="url(#maskGradient)" 
             strokeDasharray={this.state.strokeDasharray} 
           />
           <circle 
             className={style.tapArea} 
             data-testid="ring-taparea" 
+            r={this.state.ringRadius} 
+            cx={this.state.cx} 
+            cy={this.state.cy} 
             onMouseDown={this.mouseDown} 
             onTouchStart={this.mouseDown} 
             onTouchMove={this.mouseMove} 
@@ -179,6 +218,9 @@ class Ring<P extends IProps = IProps, S extends IState = IState> extends Compone
           />
           <circle 
             className={style.tapAreaMask} 
+            r={this.state.ringRadius - this.state.maskStrokeWidth - this.state.circleStrokeWidth} 
+            cx={this.state.cx} 
+            cy={this.state.cy} 
           />
         </svg>
         <div 

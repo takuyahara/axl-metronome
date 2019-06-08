@@ -161,22 +161,34 @@ exports[`Axl Metronome isDescEnabled = true swipe tempo.from => tempo.from > tem
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -454,22 +466,34 @@ exports[`Axl Metronome isDescEnabled = true swipe tempo.from 10 times => tempo.f
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -747,22 +771,34 @@ exports[`Axl Metronome isDescEnabled = true swipe tempo.to => tempo.from > tempo
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -1040,22 +1076,34 @@ exports[`Axl Metronome isDescEnabled = true swipe tempo.to 10 times => tempo.to 
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -1333,22 +1381,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from < tempo.to start metronom
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -1626,22 +1686,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from < tempo.to start metronom
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -1919,22 +1991,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from < tempo.to start metronom
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -2212,22 +2296,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from < tempo.to start metronom
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -2505,22 +2601,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from < tempo.to start metronom
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="455.53093477052 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -2798,22 +2906,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from === tempo.to start metron
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -3091,22 +3211,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from === tempo.to start metron
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="455.53093477052 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -3384,22 +3516,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from > tempo.to start metronom
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="0 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
@@ -3677,22 +3821,34 @@ exports[`Axl Metronome isDescEnabled = true tempo.from > tempo.to start metronom
                   </defs>
                   <circle
                     className="remaining"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                   <circle
                     className="mask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                     stroke="url(#maskGradient)"
                     strokeDasharray="455.53093477052 911.06186954104"
                   />
                   <circle
                     className="tapArea"
+                    cx={150}
+                    cy={150}
                     data-testid="ring-taparea"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                     onTouchMove={[Function]}
                     onTouchStart={[Function]}
+                    r={0}
                   />
                   <circle
                     className="tapAreaMask"
+                    cx={150}
+                    cy={150}
+                    r={0}
                   />
                 </svg>
                 <div
