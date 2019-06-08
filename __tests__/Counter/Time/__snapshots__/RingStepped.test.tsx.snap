@@ -24,22 +24,34 @@ exports[`RingStepped change value by MouseEvent mouseDown => mouseMove => mouseU
       </defs>
       <circle
         className="remaining"
+        cx={150}
+        cy={150}
+        r={0}
       />
       <circle
         className="mask"
+        cx={150}
+        cy={150}
+        r={0}
         stroke="url(#maskGradient)"
         strokeDasharray="182.212373908208 911.06186954104"
       />
       <circle
         className="tapArea"
+        cx={150}
+        cy={150}
         data-testid="ring-taparea"
         onMouseDown={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
+        r={0}
       />
       <circle
         className="tapAreaMask"
+        cx={150}
+        cy={150}
+        r={0}
       />
     </svg>
     <div
@@ -77,22 +89,34 @@ exports[`RingStepped change value by MouseEvent mouseDown => mouseMove 1`] = `
       </defs>
       <circle
         className="remaining"
+        cx={150}
+        cy={150}
+        r={0}
       />
       <circle
         className="mask"
+        cx={150}
+        cy={150}
+        r={0}
         stroke="url(#maskGradient)"
         strokeDasharray="182.212373908208 911.06186954104"
       />
       <circle
         className="tapArea"
+        cx={150}
+        cy={150}
         data-testid="ring-taparea"
         onMouseDown={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
+        r={0}
       />
       <circle
         className="tapAreaMask"
+        cx={150}
+        cy={150}
+        r={0}
       />
     </svg>
     <div
@@ -130,22 +154,34 @@ exports[`RingStepped change value by MouseEvent mouseDown 1`] = `
       </defs>
       <circle
         className="remaining"
+        cx={150}
+        cy={150}
+        r={0}
       />
       <circle
         className="mask"
+        cx={150}
+        cy={150}
+        r={0}
         stroke="url(#maskGradient)"
         strokeDasharray="364.424747816416 911.06186954104"
       />
       <circle
         className="tapArea"
+        cx={150}
+        cy={150}
         data-testid="ring-taparea"
         onMouseDown={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
+        r={0}
       />
       <circle
         className="tapAreaMask"
+        cx={150}
+        cy={150}
+        r={0}
       />
     </svg>
     <div
@@ -183,22 +219,34 @@ exports[`RingStepped change value by MouseEvent mouseMove 1`] = `
       </defs>
       <circle
         className="remaining"
+        cx={150}
+        cy={150}
+        r={0}
       />
       <circle
         className="mask"
+        cx={150}
+        cy={150}
+        r={0}
         stroke="url(#maskGradient)"
         strokeDasharray="0 911.06186954104"
       />
       <circle
         className="tapArea"
+        cx={150}
+        cy={150}
         data-testid="ring-taparea"
         onMouseDown={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}
+        r={0}
       />
       <circle
         className="tapAreaMask"
+        cx={150}
+        cy={150}
+        r={0}
       />
     </svg>
     <div

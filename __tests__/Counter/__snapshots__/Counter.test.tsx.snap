@@ -57,22 +57,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -244,22 +256,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="60.7374579694026 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -431,22 +455,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="60.7374579694026 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -618,22 +654,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="121.47491593880531 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -805,22 +853,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -992,22 +1052,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="273.318560862312 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -1179,22 +1251,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -1366,22 +1450,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -1553,22 +1649,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -1740,22 +1848,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="516.2683927399227 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -1927,22 +2047,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -2114,22 +2246,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -2301,22 +2445,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -2488,22 +2644,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -2675,22 +2843,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -2862,22 +3042,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -3049,22 +3241,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -3236,22 +3440,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -3423,22 +3639,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -3610,22 +3838,34 @@ exports[`Counter tempo.from < tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -3797,22 +4037,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Indicat
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -3984,22 +4236,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Indicat
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="60.7374579694026 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -4171,22 +4435,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Indicat
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="60.7374579694026 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -4358,22 +4634,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Indicat
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="121.47491593880531 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -4545,22 +4833,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -4732,22 +5032,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="273.318560862312 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -4919,22 +5231,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -5106,22 +5430,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -5293,22 +5629,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -5480,22 +5828,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="516.2683927399227 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -5667,22 +6027,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -5854,22 +6226,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is not started Ring.mo
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -6041,22 +6425,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -6228,22 +6624,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -6415,22 +6823,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -6602,22 +7022,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -6789,22 +7221,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -6976,22 +7420,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -7163,22 +7619,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -7350,22 +7818,34 @@ exports[`Counter tempo.from === tempo.to MouseEvent Timer is running Ring.moused
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -7537,22 +8017,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -7724,22 +8216,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="60.7374579694026 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -7911,22 +8415,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="60.7374579694026 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -8098,22 +8614,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Indicator
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="121.47491593880531 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -8285,22 +8813,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -8472,22 +9012,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="273.318560862312 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -8659,22 +9211,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -8846,22 +9410,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -9033,22 +9609,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -9220,22 +9808,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="516.2683927399227 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -9407,22 +10007,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -9594,22 +10206,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is not started Ring.mous
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -9781,22 +10405,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -9968,22 +10604,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -10155,22 +10803,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -10342,22 +11002,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="212.58110289290934 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -10529,22 +11201,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -10716,22 +11400,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="0 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -10903,22 +11599,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
@@ -11090,22 +11798,34 @@ exports[`Counter tempo.from > tempo.to MouseEvent Timer is running Ring.mousedow
               </defs>
               <circle
                 className="remaining"
+                cx={150}
+                cy={150}
+                r={0}
               />
               <circle
                 className="mask"
+                cx={150}
+                cy={150}
+                r={0}
                 stroke="url(#maskGradient)"
                 strokeDasharray="455.53093477052 911.06186954104"
               />
               <circle
                 className="tapArea"
+                cx={150}
+                cy={150}
                 data-testid="ring-taparea"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
                 onTouchMove={[Function]}
                 onTouchStart={[Function]}
+                r={0}
               />
               <circle
                 className="tapAreaMask"
+                cx={150}
+                cy={150}
+                r={0}
               />
             </svg>
             <div
