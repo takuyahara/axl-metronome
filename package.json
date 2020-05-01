@@ -35,7 +35,8 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "typescript": "^3.3.3333",
-    "webpack-bugsnag-plugins": "^1.4.0"
+    "webpack-bugsnag-plugins": "^1.4.0",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "yarn develop",
@@ -58,7 +59,9 @@
     "cy-run-ci": "cross-env BABEL_ENV=test cypress run --record --key $CYPRESS_KEY",
     "test-e2e-dev": "start-server-and-test start http://localhost:8000 cy-open",
     "test-e2e-dev-pre-commit": "start-server-and-test start http://localhost:8000 cy-run-dev",
-    "test-e2e-ci": "start-server-and-test start http://localhost:8000 cy-run-ci"
+    "test-e2e-ci": "start-server-and-test start http://localhost:8000 cy-run-ci",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -123,5 +126,6 @@
     "tslint": "^5.14.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^3.6.0"
-  }
+  },
+  "snyk": true
 }
