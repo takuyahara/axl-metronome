@@ -9,7 +9,7 @@
     "@types/lodash": "^4.14.123",
     "@types/react-helmet": "^5.0.8",
     "babel-plugin-react-remove-properties": "^0.3.0",
-    "babel-preset-react-app": "^7.0.2",
+    "babel-preset-react-app": "^10.0.1",
     "classnames": "^2.2.6",
     "config": "^3.0.1",
     "configcat-node": "^2.1.9",
