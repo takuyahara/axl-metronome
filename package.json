@@ -118,7 +118,7 @@
     "qrcode": "^1.3.3",
     "sinon": "^7.2.7",
     "start-server-and-test": "^1.7.11",
-    "stylelint": "^9.10.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^18.2.0",
     "tslint": "^5.14.0",
     "tslint-config-prettier": "^1.18.0",
